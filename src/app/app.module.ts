@@ -8,6 +8,7 @@ import { homeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { previousComponent } from './previousMatches/previous.component';
+import { welcomeComponent } from './Welcome/welcome.component';
 
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { previousComponent } from './previousMatches/previous.component';
     headerComponent,
     homeComponent,
     // previousComponent,
+    welcomeComponent,
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
