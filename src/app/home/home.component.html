@@ -17,15 +17,15 @@
       </div>
       <div class="modal-body">
         <div class="row">
-          <div *ngFor="let item of playerForm">
-            <div class="col-8">
+          <div class="row mr-1" *ngFor="let item of playerForm">
+            <div class="col-9">
               <label>Player Name: </label>
-              <input [(ngModel)]="item.name" />
+              <input class="form-controls" [(ngModel)]="item.name" />
             </div>
           </div>
-          <button class="btn btn-primary" (click)="addForm()">
-            <fa-icon [icon]="faCoffee"></fa-icon>
-          </button>
+          <div class="col-4">
+            <button class="btn btn-primary" (click)="addForm()">Add</button>
+          </div>
         </div>
       </div>
       <div class="modal-footer">

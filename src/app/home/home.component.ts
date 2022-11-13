@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  styles: [
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css',
+  ],
 })
 export class homeComponent {
   displayStyle = 'none';
@@ -12,10 +14,7 @@ export class homeComponent {
       name: '',
     },
   ];
-  faCoffee;
-  constructor() {
-    this.faCoffee = faCoffee;
-  }
+  constructor() {}
 
   addPlyrs() {
     this.displayStyle = 'block';
