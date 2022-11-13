@@ -10,4 +10,9 @@ export class headerComponent {
   getDate = () => {
     return Date.now();
   };
+  ngAfterContentInit() {
+    setInterval(function () {
+      this.getDate();
+    }, 1000);
+  }
 }
