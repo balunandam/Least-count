@@ -17,10 +17,15 @@
       </div>
       <div class="modal-body">
         <div class="row">
-          <div class="col-sm-12">
-            <label>No. of players</label>
-            <input type="number" />
+          <div *ngFor="let item of playerForm">
+            <div class="row">
+              <div class="col-4">
+                <label>Player Name</label>
+                <input [(ngModel)]="item.name" />
+              </div>
+            </div>
           </div>
+          <button (click)="addForm()">add</button>
         </div>
       </div>
       <div class="modal-footer">

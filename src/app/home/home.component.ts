@@ -6,19 +6,25 @@ import { FormGroup, FormControl, FormArray, FormBuilder } from '@angular/forms';
   styleUrls: ['./home.component.css'],
 })
 export class homeComponent {
-  playersForm: FormGroup;
   displayStyle = 'none';
-  constructor(private fb: FormBuilder) {
-    this.playersForm = this.fb.group({
+  playerForm = [
+    {
       name: '',
-      skills: this.fb.array([]),
-    });
-  }
+    },
+  ];
+  constructor(private fb: FormBuilder) {}
 
   addPlyrs() {
     this.displayStyle = 'block';
   }
   closePopup() {
     this.displayStyle = 'none';
+  }
+
+  addForm() {
+    this.playerForm.push({
+      name: '',
+    });
+    debugger;
   }
 }
