@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { previousComponent } from './previousMatches/previous.component';
 import { welcomeComponent } from './Welcome/welcome.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { welcomeComponent } from './Welcome/welcome.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    RouterModule,
   ],
   declarations: [
     AppComponent,
