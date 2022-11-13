@@ -6,13 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class headerComponent {
-  constructor() {}
-  getDate = () => {
-    return Date.now();
-  };
-  ngAfterContentInit() {
-    setInterval(function () {
-      this.getDate();
-    }, 1000);
+  date;
+  constructor() {
+    setInterval(() => {
+      this.date = new Date();
+    }, 1);
   }
 }

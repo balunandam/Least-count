@@ -11,6 +11,7 @@ import { previousComponent } from './previousMatches/previous.component';
 import { welcomeComponent } from './Welcome/welcome.component';
 import { AppRoutes } from './routing';
 import { RouterModule } from '@angular/router';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(AppRoutes, { useHash: true }),
+    FontAwesomeModule,
   ],
   declarations: [
     AppComponent,

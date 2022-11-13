@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, FormArray, FormBuilder } from '@angular/forms';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -12,7 +12,10 @@ export class homeComponent {
       name: '',
     },
   ];
-  constructor(private fb: FormBuilder) {}
+  faCoffee;
+  constructor() {
+    this.faCoffee = faCoffee;
+  }
 
   addPlyrs() {
     this.displayStyle = 'block';
