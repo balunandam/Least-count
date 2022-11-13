@@ -7,4 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class homeComponent {
   constructor() {}
+  addPlyrs = () => {
+    console.log('test');
+  };
 }

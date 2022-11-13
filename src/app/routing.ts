@@ -8,6 +8,10 @@ export const AppRoutes: Routes = [
     path: '',
     component: welcomeComponent,
   },
+  {
+    path: 'welcome',
+    component: welcomeComponent,
+  },
   { path: 'home', component: homeComponent },
   { path: 'previous', component: previousComponent },
 ];
