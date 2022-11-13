@@ -1,19 +1,10 @@
-import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { headerComponent } from './header/header.component';
-import { homeComponent } from './home/home.component';
-import { welcomeComponent } from './Welcome/welcome.component';
-import { previousComponent } from './previousMatches/previous.component';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot([
-      { path: 'home', component: homeComponent },
-      { path: '', component: welcomeComponent },
-      { path: 'previous', component: previousComponent },
-    ]),
-  ],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule],
-  providers: [],
 })
 export class AppRoutingModule {}

@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { previousComponent } from './previousMatches/previous.component';
 import { welcomeComponent } from './Welcome/welcome.component';
+import { Routes } from '@angular/router';
+import { AppRoutes } from './routing';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -19,7 +21,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule,
+    RouterModule.forRoot(AppRoutes, { useHash: true }),
   ],
   declarations: [
     AppComponent,
