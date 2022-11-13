@@ -7,4 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class headerComponent {
   constructor() {}
+  getDate = () => {
+    return Date.now();
+  };
 }

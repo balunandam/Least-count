@@ -23,7 +23,7 @@ import { welcomeComponent } from './Welcome/welcome.component';
     AppComponent,
     headerComponent,
     homeComponent,
-    // previousComponent,
+    previousComponent,
     welcomeComponent,
   ],
   bootstrap: [AppComponent],
